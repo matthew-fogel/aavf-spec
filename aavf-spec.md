@@ -106,7 +106,7 @@ AAVF records use a simple haplotype representation for REF and ALT alleles to de
 #### 3.1.1 Example 1
  
 For example, suppose we are looking at a locus within the **a** gene in the **my_chrom** genome:
-
+```
 | Example | Amino Acid Sequence | Nucleotide Sequence | Alteration                                               |
 |---------|--------------------:|--------------------:|----------------------------------------------------------|
 | Ref     |           g l K k s | gga ctc AAA aaa tcc | K is the reference amino acid                            |
