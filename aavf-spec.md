@@ -33,14 +33,14 @@ File meta-information is included after the ## string and must be key=value pair
 A single 'fileformat' field is always required, must be the first line in the file, and details the AAVF format version number. For example, for AAVF version 1.0, this line should read:
 ```
 ##fileformat=AAVFv1.0
-` ``
+```
 #### 1.2.2 Information field format
  
 INFO fields should be described as follows (first four keys are required, source and version are recommended):
 
 ```
 ##INFO=<ID=ID,Number=number,Type=type,Description="description",Source="source",Version="version">
-` ``
+```
 
 Possible Types for INFO fields are: Integer, Float, Flag, Character, and String. The Number entry is an integer that describes the number of values that can be included with the INFO field. For example, if the INFO field contains a single number, then this value should be 1; if the INFO field describes a pair of numbers, then this value should be 2 and so on. There are also certain special characters used to define special cases:
 
@@ -54,7 +54,7 @@ FILTERs that have been applied to the data should be described as follows:
 
 ```
 ##FILTER=<ID=ID,Description="description">
-` ``
+```
 
 ### 1.3 Header line syntax
  
@@ -106,7 +106,7 @@ AAVF records use a simple haplotype representation for REF and ALT alleles to de
 #### 3.1.1 Example 1
  
 For example, suppose we are looking at a locus within the **a** gene in the **my_chrom** genome:
-```
+
 | Example | Amino Acid Sequence | Nucleotide Sequence | Alteration                                               |
 |---------|--------------------:|--------------------:|----------------------------------------------------------|
 | Ref     |           g l K k s | gga ctc AAA aaa tcc | K is the reference amino acid                            |
